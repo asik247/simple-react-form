@@ -4,7 +4,7 @@ const ControlComponent2 = () => {
     const [myName, setMyName] = useState('');
     const [myEmail, setMyEmail] = useState('');
     const [myText, setMyText] = useState('');
-    const [error,setError] = useState('')
+    const [error, setError] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,15 +14,15 @@ const ControlComponent2 = () => {
         setMyEmail('');
     }
 
-    // My Text hande code start hre;
-    const myTextHandle = (e)=>{
+    // My Text hande code start hre; {/* ✅✅✅✅ */}
+    const myTextHandle = (e) => {
         e.preventDefault();
         const text = e.target.value;
         setMyText(text)
-        console.log('btn clcikde text',text);
-        if(text.length < 5){
+        // console.log('btn clcikde text',text);
+        if (text.length < 5) {
             setError("Text must be 5 character or longer")
-        }else{
+        } else {
             setError("")
         }
 
@@ -54,7 +54,7 @@ const ControlComponent2 = () => {
                         placeholder="Your Email"
                         className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
-
+                    {/* ✅✅✅✅ */}
                     <input
                         onChange={myTextHandle}
                         type="text"
@@ -72,6 +72,7 @@ const ControlComponent2 = () => {
                     </button>
 
                 </form>
+                {/* ✅✅✅✅ */}
                 <p className='text-red-500 font-bold mt-5 text-center'>{error}</p>
 
             </div>
