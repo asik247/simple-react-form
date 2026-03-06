@@ -7,7 +7,9 @@ const Root = () => {
     return (
         <div>
            <NavBar></NavBar>
-            <Outlet></Outlet>
+            <div className='w-11/12 flex justify-center items-center mx-auto mt-10 '>
+                <Outlet></Outlet>
+            </div>
         </div>
     );
 };

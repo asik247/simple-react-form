@@ -2,24 +2,59 @@ import React from 'react';
 
 const SimpleForm = () => {
 
-    // form sumbit code start here;
     const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(e.target);
+        e.preventDefault();
+
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password, name);
+
+        console.log(name, email, password);
     }
+
     return (
-        <div>
-            <h1>Explore React Form</h1>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="name" id="name" placeholder='Your Name:' /><br />
-                <input type="email" name="email" id="email" placeholder='Your email:' /><br />
-                <input type="password" name="password" id="password" placeholder='Type Pin' /><br /><br />
-                <button type='submit'>Submit</button>
-            </form>
+        <div className="flex items-center justify-center min-h-screen ">
+
+            <div className="bg-white shadow-xl rounded-2xl p-8 w-96">
+
+                <h1 className="text-2xl font-bold text-center mb-6 text-gray-700">
+                    Explore React Form
+                </h1>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Type Pin"
+                        className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+
+                    <button
+                        type="submit"
+                        className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition"
+                    >
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
         </div>
     );
 };

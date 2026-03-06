@@ -18,7 +18,6 @@ const router = createBrowserRouter([
     children:[
       {index:true,Component:SimpleForm},
       {path:'action',Component:ActionData},
-      {path:'formData',Component:FormData},
       {path:'controlData',Component:ControlComponent},
       {path:'controlData2',Component:ControlComponent2}
     ]
