@@ -23,9 +23,7 @@ const ActionData = () => {
                 <h1 className="text-2xl font-bold text-center mb-6 text-gray-700">
                     Using ActionFormData
                 </h1>
-                <h1 className="text-2xl font-bold text-center mb-6 text-gray-700">
-                    Using ActionFormData
-                </h1>
+              
 
                 <form onSubmit={handleSubmit} className="space-y-4">
 
