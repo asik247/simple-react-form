@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 const ControlComponent2 = () => {
     const [myName, setMyName] = useState('');
     const [myEmail, setMyEmail] = useState('');
+    const [myText, setMyText] = useState('');
+    const [error,setError] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -10,6 +12,20 @@ const ControlComponent2 = () => {
         // Submit করার পরে input clear করতে চাইলে:
         setMyName('');
         setMyEmail('');
+    }
+
+    // My Text hande code start hre;
+    const myTextHandle = (e)=>{
+        e.preventDefault();
+        const text = e.target.value;
+        setMyText(text)
+        console.log('btn clcikde text',text);
+        if(text.length < 5){
+            setError("Text must be 5 character or longer")
+        }else{
+            setError("")
+        }
+
     }
 
     return (
@@ -39,6 +55,15 @@ const ControlComponent2 = () => {
                         className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
 
+                    <input
+                        onChange={myTextHandle}
+                        type="text"
+                        value={myText}
+                        placeholder="Enter Any Text"
+                        className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    />
+
+
                     <button
                         type="submit"
                         className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition"
@@ -47,6 +72,7 @@ const ControlComponent2 = () => {
                     </button>
 
                 </form>
+                <p className='text-red-500 font-bold mt-5 text-center'>{error}</p>
 
             </div>
 

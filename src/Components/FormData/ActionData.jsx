@@ -47,7 +47,7 @@ const ActionData = () => {
                         placeholder="Enter email"
                         className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
-
+                   
                     <button
                         type="submit"
                         className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition"
