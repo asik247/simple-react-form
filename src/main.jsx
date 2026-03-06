@@ -4,10 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import SimpleForm from './Components/SimpleForm/SimpleForm.jsx'
 import ControlComponent from './Components/ControlComponent/ControlComponent.jsx'
+import ControlComponent2 from './Components/ControlComponent2/ControlComponent2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   {/* <SimpleForm></SimpleForm> */}
-  <ControlComponent></ControlComponent>
+  {/* <ControlComponent></ControlComponent> */}
+  <ControlComponent2></ControlComponent2>
   </StrictMode>,
 )
