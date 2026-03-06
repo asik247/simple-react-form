@@ -20,6 +20,7 @@ const NavBar = () => {
                         <NavLink to="/action">ActionData</NavLink>
                         <NavLink to="/controlData">ControlData</NavLink>
                         <NavLink to="/controlData2">ControlData2</NavLink>
+                        <NavLink to="/unControlData">UnControlData</NavLink>
                     </div>
 
                     {/* LogOut Button */}
@@ -50,6 +51,8 @@ const NavBar = () => {
                     <NavLink to="/action" onClick={() => setIsOpen(false)}>ActionData</NavLink>
                     <NavLink to="/controlData" onClick={() => setIsOpen(false)}>ControlData</NavLink>
                     <NavLink to="/controlData2" onClick={() => setIsOpen(false)}>ControlData2</NavLink>
+                    <NavLink to="/unControlData">UnControlData</NavLink>
+
 
                     <button className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition mt-2">
                         LogOut
