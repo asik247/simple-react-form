@@ -10,6 +10,7 @@ import ActionData from './Components/FormData/ActionData.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Root from './Components/Root/Root.jsx'
 import UnControlData from './Components/UncontrolData/UnControlData.jsx'
+import UnControlData2 from './Components/UnControlData2/UnControlData2.jsx'
 
 // create router code start hre;
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       {path:'controlData',Component:ControlComponent},
       {path:'controlData2',Component:ControlComponent2},
       {path:'unControlData',Component:UnControlData},
+      {path:'unControlData2',Component:UnControlData2},
     ]
   }
 ])
