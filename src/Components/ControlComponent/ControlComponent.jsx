@@ -18,9 +18,7 @@ const ControlComponent = () => {
                 <h1 className="text-2xl font-bold text-center text-gray-700 mb-6">
                     UseState Control Form
                 </h1>
-                <h1 className="text-2xl font-bold text-center text-gray-700 mb-6">
-                    UseState Control Form
-                </h1>
+               
                
 
                 <form onSubmit={handle} className="space-y-4">
