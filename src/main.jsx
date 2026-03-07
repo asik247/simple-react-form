@@ -11,6 +11,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Root from './Components/Root/Root.jsx'
 import UnControlData from './Components/UncontrolData/UnControlData.jsx'
 import UnControlData2 from './Components/UnControlData2/UnControlData2.jsx'
+import ControlComponent3 from './Components/ControlComponent3/ControlComponent3.jsx'
 
 // create router code start hre;
 const router = createBrowserRouter([
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       {path:'controlData2',Component:ControlComponent2},
       {path:'unControlData',Component:UnControlData},
       {path:'unControlData2',Component:UnControlData2},
+      {path:'controlData3',Component:ControlComponent3},
     ]
   }
 ])
