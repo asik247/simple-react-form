@@ -24,6 +24,7 @@ const NavBar = () => {
                         <NavLink to="/unControlData2">UnControlData2</NavLink>
                         <NavLink to="/controlData3">ControlData3</NavLink>
                         <NavLink to="/hookForm">HookForm</NavLink>
+                        <NavLink to="/hookForm2">HookForm2</NavLink>
 
                     </div>
 
@@ -59,6 +60,8 @@ const NavBar = () => {
                     <NavLink to="/unControlData2">UnControlData2</NavLink>
                     <NavLink to="/controlData3">ControlData3</NavLink>
                     <NavLink to="/hookForm">HookForm</NavLink>
+                    <NavLink to="/hookForm2">HookForm2</NavLink>
+
 
 
 
