@@ -4,19 +4,19 @@ const ControlComponent3 = () => {
     // control components cd start her now;
 
     const [pin, setPin] = useState('')
-    const [error,setError] = useState('');
+    const [error, setError] = useState('');
     // pin handle hre ;
     const handlePin = (e) => {
         e.preventDefault();
         const pinValue = e.target.value;
         setPin(pinValue)
         // condition pin length cheack;
-        if(pin.length < 6){
-            setError('pin must be 6 character or longer.')
-        }
-        else{
-            setError('')
-        }
+        // if (pin.length < 6) {
+        //     setError('pin must be 6 character or longer.')
+        // }
+        // else {
+        //     setError('')
+        // }
         // console.log(pin);
 
     }
@@ -24,6 +24,13 @@ const ControlComponent3 = () => {
     const submitHandle = (e) => {
         e.preventDefault();
         console.log(pin);
+         if (pin.length < 6) {
+            setError('pin must be 6 character or longer.')
+        }
+        else {
+            setError('')
+        }
+
     }
 
     return (
@@ -72,9 +79,11 @@ const ControlComponent3 = () => {
                     <p className='text-red-500 font-bold mt-5 text-center'>{error}</p>
 
                 </form>
+              
 
 
             </div>
+            
 
         </div>
     );
