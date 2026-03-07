@@ -23,6 +23,8 @@ const NavBar = () => {
                         <NavLink to="/unControlData">UnControlData</NavLink>
                         <NavLink to="/unControlData2">UnControlData2</NavLink>
                         <NavLink to="/controlData3">ControlData3</NavLink>
+                        <NavLink to="/hookForm">HookForm</NavLink>
+
                     </div>
 
                     {/* LogOut Button */}
@@ -56,6 +58,7 @@ const NavBar = () => {
                     <NavLink to="/unControlData">UnControlData</NavLink>
                     <NavLink to="/unControlData2">UnControlData2</NavLink>
                     <NavLink to="/controlData3">ControlData3</NavLink>
+                    <NavLink to="/hookForm">HookForm</NavLink>
 
 
 

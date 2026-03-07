@@ -12,6 +12,7 @@ import Root from './Components/Root/Root.jsx'
 import UnControlData from './Components/UncontrolData/UnControlData.jsx'
 import UnControlData2 from './Components/UnControlData2/UnControlData2.jsx'
 import ControlComponent3 from './Components/ControlComponent3/ControlComponent3.jsx'
+import HookForm from './Components/HookForm/HookForm.jsx'
 
 // create router code start hre;
 const router = createBrowserRouter([
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       {path:'unControlData',Component:UnControlData},
       {path:'unControlData2',Component:UnControlData2},
       {path:'controlData3',Component:ControlComponent3},
+      {path:'hookForm',Component:HookForm},
     ]
   }
 ])
